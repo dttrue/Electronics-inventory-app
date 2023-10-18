@@ -1,0 +1,74 @@
+[
+  {
+    "id": "qwfl",
+    "name": "earbuds",
+    "priceInCents": "141",
+    "inStock": true
+  },
+  {
+    "id": "n5p8",
+    "name": "headphones",
+    "priceInCents": "159",
+    "inStock": false
+  },
+  {
+    "id": "l8lt",
+    "name": "USB-C cable",
+    "priceInCents": "197",
+    "inStock": false
+  },
+  {
+    "id": "0v91",
+    "name": "Thunderbolt Cable",
+    "priceInCents": "185",
+    "inStock": true
+  },
+  {
+    "id": "1jtz",
+    "name": "Android phones",
+    "priceInCents": "108",
+    "inStock": true
+  },
+  {
+    "id": "ulsl",
+    "name": "TCL 55\" Class 4-Series 4K UHD HDR Smart Roku TV ",
+    "priceInCents": "113",
+    "inStock": true
+  },
+  {
+    "id": "23tv",
+    "name": "TCL S Class 2.1 Channel Sound Bar with DTS Virtual:X and Wireless Subwoofer , S210W",
+    "priceInCents": "191",
+    "inStock": false
+  },
+  {
+    "id": "5r2v",
+    "name": "RCA 720p Smart Wi-Fi Home Theater Projector w/ Roku Stick",
+    "priceInCents": "185",
+    "inStock": false
+  },
+  {
+    "id": "vsyk",
+    "name": "ONN.HDMI CBL 6FT BLK",
+    "priceInCents": "126",
+    "inStock": false
+  },
+  {
+    "id": "w6bp",
+    "name": "Simyoung Wii to HDMI Wii 2 HDMI Full HD Portable Converter Adapter 3.5mm Audio Out",
+    "priceInCents": "112",
+    "inStock": true
+  },
+  {
+    "id": "4xsd",
+    "name": "Tv",
+    "priceInCents": "147",
+    "inStock": false
+  },
+  {
+    "id": "9g6s",
+    "name": "sound bar",
+    "priceInCents": "147",
+    "inStock": false
+  }
+]

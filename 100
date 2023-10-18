@@ -1,0 +1,71 @@
+
+[
+  { id: 'c3zc', name: 'earbuds', priceInCents: '$150', inStock: false },
+  {
+    id: '3qb8',
+    name: 'headphones',
+    priceInCents: '$123',
+    inStock: true
+  },
+  {
+    id: 'nqnz',
+    name: 'USB-C cable',
+    priceInCents: '$185',
+    inStock: false
+  },
+  {
+    id: 'vvde',
+    name: 'Thunderbolt Cable',
+    priceInCents: '$104',
+    inStock: true
+  },
+  {
+    id: 'qpb8',
+    name: 'Android phones',
+    priceInCents: '$190',
+    inStock: false
+  },
+  {
+    id: 'uklw',
+    name: 'TCL 55" Class 4-Series 4K UHD HDR Smart Roku TV ',
+    priceInCents: '$188',
+    inStock: false
+  },
+  {
+    id: 'k1lk',
+    name: 'TCL S Class 2.1 Channel Sound Bar with DTS Virtual:X and Wireless Subwoofer , S210W',
+    priceInCents: '$136',
+    inStock: false
+  },
+  {
+    id: '150n',
+    name: 'RCA 720p Smart Wi-Fi Home Theater Projector w/ Roku Stick',
+    priceInCents: '$171',
+    inStock: false
+  },
+  {
+    id: 'lgs5',
+    name: 'ONN.HDMI CBL 6FT BLK',
+    priceInCents: '$123',
+    inStock: false
+  },
+  {
+    id: 'hbvf',
+    name: 'Simyoung Wii to HDMI Wii 2 HDMI Full HD Portable Converter Adapter 3.5mm Audio Out',
+    priceInCents: '$105',
+    inStock: true
+  },
+  { id: 'l6om', name: 'Tv', priceInCents: '$136', inStock: true },
+  {
+    id: 'hvrc',
+    name: 'sound bar',
+    priceInCents: '$148',
+    inStock: true
+  },
+  {
+    id: '5myV',
+    name: ' Portable Charger',
+    priceInCents: 10.99,
+    inStock: 'true'
+  }
+]
