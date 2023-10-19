@@ -36,6 +36,10 @@ npm install chalk@5
 - `src/products.js`: JS file containing inventory function
 - `data/products.json`: JSON file containing the inventory items.
 - `data/shoppingCart.json`: JSON file containing the shopping cart items.
+- `.gitignore`: A file that exclude files and directories that are not relevant to the project's source code.
+- `package.json`: A file is a central configuration file for Node.js projects.
+- `package-lock.json`: A file that manages and tracks the dependencies of the project.
+- `filter/100`: A file that allows users to apply various filters to their shopping cart to sort, search, and manage items more efficiently.
 - `README.md`: This documentation.
 
 ## Functions
