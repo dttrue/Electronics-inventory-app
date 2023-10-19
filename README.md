@@ -12,7 +12,7 @@ npm install @faker-js/faker --save-dev
 
 npm install nanoid@3
 
-
+npm install --save-dev jest
 4. Use the command-line interface (CLI) to interact with the application. You can use the following commands:
 
 - `create <name> <priceInCents> <inStock>`: Create a new inventory item.
@@ -26,7 +26,8 @@ npm install nanoid@3
 - `cancelcart`: Cancel the shopping cart.
 
 ## File Structure
-- `index.js`: JS file containing inventory API
+- `products.test.js`: JS file containing test case.
+- `index.js`: JS file containing inventory API.
 - `src/products.js`: JS file containing inventory function
 - `data/products.json`: JSON file containing the inventory items.
 - `data/shoppingCart.json`: JSON file containing the shopping cart items.
