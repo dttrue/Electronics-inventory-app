@@ -13,6 +13,8 @@ npm install @faker-js/faker --save-dev
 npm install nanoid@3
 
 npm install --save-dev jest
+
+npm install chalk@5
 4. Use the command-line interface (CLI) to interact with the application. You can use the following commands:
 
 - `create <name> <priceInCents> <inStock>`: Create a new inventory item.
