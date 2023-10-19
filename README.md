@@ -26,6 +26,7 @@ npm install chalk@5
 - `addtocart <itemIndex> <quantity>`: Add an item to the shopping cart.
 - `totalprice`: Calculate the total price of items in the shopping cart.
 - `cancelcart`: Cancel the shopping cart.
+- `filter`: streamlines the process of filtering inventory items according to different attributes or properties. For instance "price"` as the property.
 
 ## File Structure
 - `products.test.js`: JS file containing test case.
