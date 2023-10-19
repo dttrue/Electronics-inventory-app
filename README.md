@@ -15,7 +15,9 @@ npm install nanoid@3
 npm install --save-dev jest
 
 npm install chalk@5
-4. Use the command-line interface (CLI) to interact with the application. You can use the following commands:
+
+
+3. Use the command-line interface (CLI) to interact with the application. You can use the following commands:
 
 - `create <name> <priceInCents> <inStock>`: Create a new inventory item.
 - `list`: List all inventory items.
@@ -26,7 +28,7 @@ npm install chalk@5
 - `addtocart <itemIndex> <quantity>`: Add an item to the shopping cart.
 - `totalprice`: Calculate the total price of items in the shopping cart.
 - `cancelcart`: Cancel the shopping cart.
-- `filter`: Streamlines the process of filtering inventory items according to different attributes or properties. For instance "priceInCents"` as the property.
+- `filter`: Streamlines the process of filtering inventory items according to different attributes or properties. For instance `<priceInCents>` as the property.
 
 ## File Structure
 - `products.test.js`: JS file containing test case.
