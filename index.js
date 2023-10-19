@@ -26,7 +26,7 @@ function generateElectronics() {
       electronicsProducts.push({
         id: faker.random.alphaNumeric(4),
         name: productTypes[i - 1], 
-        priceInCents: faker.commerce.price(100, 200, 0,), 
+        priceInCents: faker.commerce.price(100, 200, 0, '$'), 
         inStock: faker.datatype.boolean(),
       });
     }
@@ -41,7 +41,7 @@ function generateElectronics() {
     if (expectedCommand === "create") {
       const [name, price, stock] = process.argv.slice(3);
       const parsedPrice = parseFloat(price);
-      const stockString = parseInt(stock) 
+      const stockString = parseInt(stock) > 0 ? "true" : "false"; 
   
       result = productsAPI.createInventoryItem(name, parsedPrice, stockString);
     } else if (expectedCommand === "list") {
@@ -57,7 +57,7 @@ function generateElectronics() {
       const [name, price, stock] = process.argv.slice(4);
   
       const parsedPrice = parseFloat(price);
-      const stockString = parseInt(stock) 
+      const stockString = parseInt(stock) > 0 ? "true" : "false";
   
       result = productsAPI.updateInventoryItem(
         index,
@@ -70,32 +70,28 @@ function generateElectronics() {
       fs.writeFileSync(dataFilePath, JSON.stringify(randomItems, null, 2));
       result = "Random items generated and saved to products.json";
     }else if (expectedCommand === "addtocart") {
+    
       const itemIndex = parseInt(process.argv[3]);
       const quantity = parseInt(process.argv[4]);
   
       const item = productsAPI.getInventoryItemDetails(itemIndex);
   
       if (item) {
-        productsAPI.addToCart(item, quantity);
+        productsAPI.addItemToCart(item, quantity);
         result = "Item added to the shopping cart.";
       } else {
         result = "Item not found in inventory.";
       }
-    } else if (expectedCommand === "calculatetotalprice") {
-      const totalPrice = productsAPI.calculateTotalPrice();
+    } else if (expectedCommand === "carttotalprice") {
+      const totalPrice = productsAPI.calculateCartTotalPrice();
       result = `Total price in the shopping cart: $${totalPrice.toFixed(2)}`;
-    } else if (expectedCommand === "calculatecarttotalquantity") {
+    } else if (expectedCommand === "carttotalquantity") {
       const totalQuantity = productsAPI.calculateCartTotalQuantity();
       result = "Total quantity in the shopping cart:\n" + JSON.stringify(totalQuantity, null, 2);
     } else if (expectedCommand === "cancelcart") {
+     
       productsAPI.cancelCart();
       result = "Shopping cart has been canceled.";
-    }else if (expectedCommand === "filter") {
-      const property = process.argv[3];
-      const operator = process.argv[4];
-      const value = process.argv[5];
-  
-      result = productsAPI.filterItemsByProperty(property, operator, value);
     }
   
     console.log(result);

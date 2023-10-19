@@ -8,6 +8,10 @@ This Node.js application allows you to manage an inventory of products and a sho
 
 2. Install the required dependencies using npm:
 
+npm install @faker-js/faker --save-dev
+
+npm install nanoid@3
+
 
 4. Use the command-line interface (CLI) to interact with the application. You can use the following commands:
 
@@ -22,24 +26,24 @@ This Node.js application allows you to manage an inventory of products and a sho
 - `cancelcart`: Cancel the shopping cart.
 
 ## File Structure
-
-- `app.js`: The main application file.
+- `index.js`: JS file containing inventory API
+- `src/products.js`: JS file containing inventory function
 - `data/products.json`: JSON file containing the inventory items.
 - `data/shoppingCart.json`: JSON file containing the shopping cart items.
 - `README.md`: This documentation.
 
 ## Functions
 
-- `createInventoryItem(name, priceInCents, inStock)`: Create a new inventory item.
+- `createInventoryItem()`: Create a new inventory item.
 - `listInventoryItems()`: List all inventory items.
-- `getInventoryItemDetails(index)`: View details of a specific inventory item.
-- `deleteInventoryItem(index)`: Delete an inventory item.
-- `updateInventoryItem(index, name, priceInCents, inStock)`: Update an inventory item.
+- `getInventoryItemDetails()`: View details of a specific inventory item.
+- `deleteInventoryItem()`: Delete an inventory item.
+- `updateInventoryItem()`: Update an inventory item.
 - `viewCart()`: View the contents of the shopping cart.
-- `addToCart(itemIndex, quantity)`: Add an item to the shopping cart.
+- `addToCart()`: Add an item to the shopping cart.
 - `calculateTotalPrice()`: Calculate the total price of items in the shopping cart.
 - `cancelCart()`: Cancel the shopping cart.
-- `filterItemsByProperty(property, operator, value)`: Filter inventory items based on a property and value.
+- `filterItemsByProperty()`: Filter inventory items based on a property and value.
 
 Please refer to the application usage section above for details on how to use these functions.
 
